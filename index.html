@@ -657,6 +657,15 @@
       />
       Your browser does not support the audio element.
     </audio>
+    <audio id="notification">
+      <source
+        src="Assets/music/notification.mp3"
+        type="audio/mpeg"
+        muted="muted"
+        allow="autoplay"
+      />
+      Your browser does not support the audio element.
+    </audio>
 
     <script src="Assets/js/moment.js"></script>
     <script>
@@ -771,6 +780,7 @@
             let lagu1 = document.getElementById("audio1");
             let lagu2 = document.getElementById("audio2");
             let lagu3 = document.getElementById("audio3");
+            let notification = document.getElementById("notification");
             if (sL < -3) {
               lagu3.play();
               lagu3.volume = 1.0;
@@ -780,6 +790,8 @@
             } else if (sL < -1.5) {
               lagu1.play();
               lagu1.volume = 1.0;
+            } else if (sL < -1) {
+              notification.play();
             }
 
             for (i = 14; i >= 0; i--) {
