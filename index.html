@@ -631,15 +631,30 @@
     </div>
 
     <audio id="audio1">
-      <source src="Assets/music/1.mp3" type="audio/mpeg" />
+      <source
+        src="Assets/music/1.mp3"
+        type="audio/mpeg"
+        muted="muted"
+        allow="autoplay"
+      />
       Your browser does not support the audio element.
     </audio>
     <audio id="audio2">
-      <source src="Assets/music/2.mp3" type="audio/mpeg" />
+      <source
+        src="Assets/music/2.mp3"
+        type="audio/mpeg"
+        muted="muted"
+        allow="autoplay"
+      />
       Your browser does not support the audio element.
     </audio>
     <audio id="audio3">
-      <source src="Assets/music/3.mp3" type="audio/mpeg" />
+      <source
+        src="Assets/music/3.mp3"
+        type="audio/mpeg"
+        muted="muted"
+        allow="autoplay"
+      />
       Your browser does not support the audio element.
     </audio>
 
@@ -676,7 +691,7 @@
       setTimeout(loadData.bind(null, "XRP"), 16000);
 
       setTimeout(function () {
-        setInterval(loadData.bind(null, "BTC"), 60000);
+        setInterval(loadData.bind(null, "BTC"), 10000);
       }, 1000);
       setTimeout(function () {
         setInterval(loadData.bind(null, "AAVE"), 60000);
@@ -758,10 +773,13 @@
             let lagu3 = document.getElementById("audio3");
             if (sL < -3) {
               lagu3.play();
+              lagu3.volume = 1.0;
             } else if (sL < -2) {
               lagu2.play();
+              lagu2.volume = 1.0;
             } else if (sL < -1.5) {
               lagu1.play();
+              lagu1.volume = 1.0;
             }
 
             for (i = 14; i >= 0; i--) {
