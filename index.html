@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="Assets/img/favicon.ico"
+      type="image/ico"
+      sizes="16x16"
+    />
+    <title>Signal</title>
+    <link rel="stylesheet" href="Assets/css/bootstrap.min.css" />
+  </head>
+
+  <body>
+    <div class="mt-5">
+      <table
+        class="table table-bordered border-primary"
+        style="text-align: center"
+      >
+        <tr>
+          <td id="h15">Nama</td>
+          <td id="h9">9</td>
+          <td id="h8">8</td>
+          <td id="h7">7</td>
+          <td id="h6">6</td>
+          <td id="h5">5</td>
+          <td id="h4">4</td>
+          <td id="h3">3</td>
+          <td id="h2">2</td>
+          <td id="h1">1</td>
+          <td id="h0">0</td>
+        </tr>
+
+        <!-- ================== LINE SATU => BTC, AAVE, ADA, ATOM ===================-->
+        <tr>
+          <td rowspan="2" class="table-primary pt-5" id="BTC10">BTC</td>
+          <td class="table-primary" id="hargaBTC9"><strong>9</strong></td>
+          <td class="table-primary" id="hargaBTC8">8</td>
+          <td class="table-primary" id="hargaBTC7">7</td>
+          <td class="table-primary" id="hargaBTC6">6</td>
+          <td class="table-primary" id="hargaBTC5">5</td>
+          <td class="table-primary" id="hargaBTC4">4</td>
+          <td class="table-primary" id="hargaBTC3">3</td>
+          <td class="table-primary" id="hargaBTC2">2</td>
+          <td class="table-primary" id="hargaBTC1">1</td>
+          <td class="table-primary" id="hargaBTC0">0</td>
+        </tr>
+        <tr>
+          <td id="persBTC9">9</td>
+          <td id="persBTC8">8</td>
+          <td id="persBTC7">7</td>
+          <td id="persBTC6">6</td>
+          <td id="persBTC5">5</td>
+          <td id="persBTC4">4</td>
+          <td id="persBTC3">3</td>
+          <td id="persBTC2">2</td>
+          <td id="persBTC1">1</td>
+          <td id="persBTC0">0</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2" class="table-light pt-5" id="AAVE10">AAVE</td>
+          <td class="table-light" id="hargaAAVE9">9</td>
+          <td class="table-light" id="hargaAAVE8">8</td>
+          <td class="table-light" id="hargaAAVE7">7</td>
+          <td class="table-light" id="hargaAAVE6">6</td>
+          <td class="table-light" id="hargaAAVE5">5</td>
+          <td class="table-light" id="hargaAAVE4">4</td>
+          <td class="table-light" id="hargaAAVE3">3</td>
+          <td class="table-light" id="hargaAAVE2">2</td>
+          <td class="table-light" id="hargaAAVE1">1</td>
+          <td class="table-light" id="hargaAAVE0">0</td>
+        </tr>
+        <tr>
+          <td id="persAAVE9">9</td>
+          <td id="persAAVE8">8</td>
+          <td id="persAAVE7">7</td>
+          <td id="persAAVE6">6</td>
+          <td id="persAAVE5">5</td>
+          <td id="persAAVE4">4</td>
+          <td id="persAAVE3">3</td>
+          <td id="persAAVE2">2</td>
+          <td id="persAAVE1">1</td>
+          <td id="persAAVE0">0</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2" class="table-primary pt-5" id="ADA10">ADA</td>
+          <td class="table-primary" id="hargaADA9">9</td>
+          <td class="table-primary" id="hargaADA8">8</td>
+          <td class="table-primary" id="hargaADA7">7</td>
+          <td class="table-primary" id="hargaADA6">6</td>
+          <td class="table-primary" id="hargaADA5">5</td>
+          <td class="table-primary" id="hargaADA4">4</td>
+          <td class="table-primary" id="hargaADA3">3</td>
+          <td class="table-primary" id="hargaADA2">2</td>
+          <td class="table-primary" id="hargaADA1">1</td>
+          <td class="table-primary" id="hargaADA0">0</td>
+        </tr>
+        <tr>
+          <td id="persADA9">9</td>
+          <td id="persADA8">8</td>
+          <td id="persADA7">7</td>
+          <td id="persADA6">6</td>
+          <td id="persADA5">5</td>
+          <td id="persADA4">4</td>
+          <td id="persADA3">3</td>
+          <td id="persADA2">2</td>
+          <td id="persADA1">1</td>
+          <td id="persADA0">0</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2" class="table-light pt-5" id="ATOM10">ATOM</td>
+          <td class="table-light" id="hargaATOM9">9</td>
+          <td class="table-light" id="hargaATOM8">8</td>
+          <td class="table-light" id="hargaATOM7">7</td>
+          <td class="table-light" id="hargaATOM6">6</td>
+          <td class="table-light" id="hargaATOM5">5</td>
+          <td class="table-light" id="hargaATOM4">4</td>
+          <td class="table-light" id="hargaATOM3">3</td>
+          <td class="table-light" id="hargaATOM2">2</td>
+          <td class="table-light" id="hargaATOM1">1</td>
+          <td class="table-light" id="hargaATOM0">0</td>
+        </tr>
+        <tr>
+          <td id="persATOM9">9</td>
+          <td id="persATOM8">8</td>
+          <td id="persATOM7">7</td>
+          <td id="persATOM6">6</td>
+          <td id="persATOM5">5</td>
+          <td id="persATOM4">4</td>
+          <td id="persATOM3">3</td>
+          <td id="persATOM2">2</td>
+          <td id="persATOM1">1</td>
+          <td id="persATOM0">0</td>
+        </tr>
+
+        <!-- ================== LINE DUA => BCH, BSV, DOT, EOS ===================-->
+        <tr>
+          <td rowspan="2" class="table-primary pt-5" id="BCH10">BCH</td>
+          <td class="table-primary" id="hargaBCH9">9</td>
+          <td class="table-primary" id="hargaBCH8">8</td>
+          <td class="table-primary" id="hargaBCH7">7</td>
+          <td class="table-primary" id="hargaBCH6">6</td>
+          <td class="table-primary" id="hargaBCH5">5</td>
+          <td class="table-primary" id="hargaBCH4">4</td>
+          <td class="table-primary" id="hargaBCH3">3</td>
+          <td class="table-primary" id="hargaBCH2">2</td>
+          <td class="table-primary" id="hargaBCH1">1</td>
+          <td class="table-primary" id="hargaBCH0">0</td>
+        </tr>
+        <tr>
+          <td id="persBCH9">9</td>
+          <td id="persBCH8">8</td>
+          <td id="persBCH7">7</td>
+          <td id="persBCH6">6</td>
+          <td id="persBCH5">5</td>
+          <td id="persBCH4">4</td>
+          <td id="persBCH3">3</td>
+          <td id="persBCH2">2</td>
+          <td id="persBCH1">1</td>
+          <td id="persBCH0">0</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2" class="table-light pt-5" id="BSV10">BSV</td>
+          <td class="table-light" id="hargaBSV9">9</td>
+          <td class="table-light" id="hargaBSV8">8</td>
+          <td class="table-light" id="hargaBSV7">7</td>
+          <td class="table-light" id="hargaBSV6">6</td>
+          <td class="table-light" id="hargaBSV5">5</td>
+          <td class="table-light" id="hargaBSV4">4</td>
+          <td class="table-light" id="hargaBSV3">3</td>
+          <td class="table-light" id="hargaBSV2">2</td>
+          <td class="table-light" id="hargaBSV1">1</td>
+          <td class="table-light" id="hargaBSV0">0</td>
+        </tr>
+        <tr>
+          <td id="persBSV9">9</td>
+          <td id="persBSV8">8</td>
+          <td id="persBSV7">7</td>
+          <td id="persBSV6">6</td>
+          <td id="persBSV5">5</td>
+          <td id="persBSV4">4</td>
+          <td id="persBSV3">3</td>
+          <td id="persBSV2">2</td>
+          <td id="persBSV1">1</td>
+          <td id="persBSV0">0</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2" class="table-primary pt-5" id="DOT10">DOT</td>
+          <td class="table-primary" id="hargaDOT9">9</td>
+          <td class="table-primary" id="hargaDOT8">8</td>
+          <td class="table-primary" id="hargaDOT7">7</td>
+          <td class="table-primary" id="hargaDOT6">6</td>
+          <td class="table-primary" id="hargaDOT5">5</td>
+          <td class="table-primary" id="hargaDOT4">4</td>
+          <td class="table-primary" id="hargaDOT3">3</td>
+          <td class="table-primary" id="hargaDOT2">2</td>
+          <td class="table-primary" id="hargaDOT1">1</td>
+          <td class="table-primary" id="hargaDOT0">0</td>
+        </tr>
+        <tr>
+          <td id="persDOT9">9</td>
+          <td id="persDOT8">8</td>
+          <td id="persDOT7">7</td>
+          <td id="persDOT6">6</td>
+          <td id="persDOT5">5</td>
+          <td id="persDOT4">4</td>
+          <td id="persDOT3">3</td>
+          <td id="persDOT2">2</td>
+          <td id="persDOT1">1</td>
+          <td id="persDOT0">0</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2" class="table-light pt-5" id="EOS10">EOS</td>
+          <td class="table-light" id="hargaEOS9">9</td>
+          <td class="table-light" id="hargaEOS8">8</td>
+          <td class="table-light" id="hargaEOS7">7</td>
+          <td class="table-light" id="hargaEOS6">6</td>
+          <td class="table-light" id="hargaEOS5">5</td>
+          <td class="table-light" id="hargaEOS4">4</td>
+          <td class="table-light" id="hargaEOS3">3</td>
+          <td class="table-light" id="hargaEOS2">2</td>
+          <td class="table-light" id="hargaEOS1">1</td>
+          <td class="table-light" id="hargaEOS0">0</td>
+        </tr>
+        <tr>
+          <td id="persEOS9">9</td>
+          <td id="persEOS8">8</td>
+          <td id="persEOS7">7</td>
+          <td id="persEOS6">6</td>
+          <td id="persEOS5">5</td>
+          <td id="persEOS4">4</td>
+          <td id="persEOS3">3</td>
+          <td id="persEOS2">2</td>
+          <td id="persEOS1">1</td>
+          <td id="persEOS0">0</td>
+        </tr>
+
+        <!-- ================== LINE TIGA => ETH, LINK, LTC, TRX ===================-->
+        <tr>
+          <td rowspan="2" class="table-primary pt-5" id="ETH10">ETH</td>
+          <td class="table-primary" id="hargaETH9">9</td>
+          <td class="table-primary" id="hargaETH8">8</td>
+          <td class="table-primary" id="hargaETH7">7</td>
+          <td class="table-primary" id="hargaETH6">6</td>
+          <td class="table-primary" id="hargaETH5">5</td>
+          <td class="table-primary" id="hargaETH4">4</td>
+          <td class="table-primary" id="hargaETH3">3</td>
+          <td class="table-primary" id="hargaETH2">2</td>
+          <td class="table-primary" id="hargaETH1">1</td>
+          <td class="table-primary" id="hargaETH0">0</td>
+        </tr>
+        <tr>
+          <td id="persETH9">9</td>
+          <td id="persETH8">8</td>
+          <td id="persETH7">7</td>
+          <td id="persETH6">6</td>
+          <td id="persETH5">5</td>
+          <td id="persETH4">4</td>
+          <td id="persETH3">3</td>
+          <td id="persETH2">2</td>
+          <td id="persETH1">1</td>
+          <td id="persETH0">0</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2" class="table-light pt-5" id="LINK10">LINK</td>
+          <td class="table-light" id="hargaLINK9">9</td>
+          <td class="table-light" id="hargaLINK8">8</td>
+          <td class="table-light" id="hargaLINK7">7</td>
+          <td class="table-light" id="hargaLINK6">6</td>
+          <td class="table-light" id="hargaLINK5">5</td>
+          <td class="table-light" id="hargaLINK4">4</td>
+          <td class="table-light" id="hargaLINK3">3</td>
+          <td class="table-light" id="hargaLINK2">2</td>
+          <td class="table-light" id="hargaLINK1">1</td>
+          <td class="table-light" id="hargaLINK0">0</td>
+        </tr>
+        <tr>
+          <td id="persLINK9">9</td>
+          <td id="persLINK8">8</td>
+          <td id="persLINK7">7</td>
+          <td id="persLINK6">6</td>
+          <td id="persLINK5">5</td>
+          <td id="persLINK4">4</td>
+          <td id="persLINK3">3</td>
+          <td id="persLINK2">2</td>
+          <td id="persLINK1">1</td>
+          <td id="persLINK0">0</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2" class="table-primary pt-5" id="LTC10">LTC</td>
+          <td class="table-primary" id="hargaLTC9">9</td>
+          <td class="table-primary" id="hargaLTC8">8</td>
+          <td class="table-primary" id="hargaLTC7">7</td>
+          <td class="table-primary" id="hargaLTC6">6</td>
+          <td class="table-primary" id="hargaLTC5">5</td>
+          <td class="table-primary" id="hargaLTC4">4</td>
+          <td class="table-primary" id="hargaLTC3">3</td>
+          <td class="table-primary" id="hargaLTC2">2</td>
+          <td class="table-primary" id="hargaLTC1">1</td>
+          <td class="table-primary" id="hargaLTC0">0</td>
+        </tr>
+        <tr>
+          <td id="persLTC9">9</td>
+          <td id="persLTC8">8</td>
+          <td id="persLTC7">7</td>
+          <td id="persLTC6">6</td>
+          <td id="persLTC5">5</td>
+          <td id="persLTC4">4</td>
+          <td id="persLTC3">3</td>
+          <td id="persLTC2">2</td>
+          <td id="persLTC1">1</td>
+          <td id="persLTC0">0</td>
+        </tr>
+
+        <!-- <tr>
+          <td rowspan="2" class="table-light pt-5" id="TRX10">TRX</td>
+          <td class="table-light" id="hargaTRX9">9</td>
+          <td class="table-light" id="hargaTRX8">8</td>
+          <td class="table-light" id="hargaTRX7">7</td>
+          <td class="table-light" id="hargaTRX6">6</td>
+          <td class="table-light" id="hargaTRX5">5</td>
+          <td class="table-light" id="hargaTRX4">4</td>
+          <td class="table-light" id="hargaTRX3">3</td>
+          <td class="table-light" id="hargaTRX2">2</td>
+          <td class="table-light" id="hargaTRX1">1</td>
+          <td class="table-light" id="hargaTRX0">0</td>
+        </tr>
+        <tr>
+          <td id="persTRX9">9</td>
+          <td id="persTRX8">8</td>
+          <td id="persTRX7">7</td>
+          <td id="persTRX6">6</td>
+          <td id="persTRX5">5</td>
+          <td id="persTRX4">4</td>
+          <td id="persTRX3">3</td>
+          <td id="persTRX2">2</td>
+          <td id="persTRX1">1</td>
+          <td id="persTRX0">0</td>
+        </tr> -->
+
+        <!-- ================== LINE EMPAT => XLM, XEM, XMR, XRP ===================-->
+        <tr>
+          <td rowspan="2" class="table-light pt-5" id="XLM10">XLM</td>
+          <td class="table-light" id="hargaXLM9">9</td>
+          <td class="table-light" id="hargaXLM8">8</td>
+          <td class="table-light" id="hargaXLM7">7</td>
+          <td class="table-light" id="hargaXLM6">6</td>
+          <td class="table-light" id="hargaXLM5">5</td>
+          <td class="table-light" id="hargaXLM4">4</td>
+          <td class="table-light" id="hargaXLM3">3</td>
+          <td class="table-light" id="hargaXLM2">2</td>
+          <td class="table-light" id="hargaXLM1">1</td>
+          <td class="table-light" id="hargaXLM0">0</td>
+        </tr>
+        <tr>
+          <td id="persXLM9">9</td>
+          <td id="persXLM8">8</td>
+          <td id="persXLM7">7</td>
+          <td id="persXLM6">6</td>
+          <td id="persXLM5">5</td>
+          <td id="persXLM4">4</td>
+          <td id="persXLM3">3</td>
+          <td id="persXLM2">2</td>
+          <td id="persXLM1">1</td>
+          <td id="persXLM0">0</td>
+        </tr>
+
+        <!-- <tr>
+          <td rowspan="2" class="table-light pt-5" id="XEM10">XEM</td>
+          <td class="table-light" id="hargaXEM9">9</td>
+          <td class="table-light" id="hargaXEM8">8</td>
+          <td class="table-light" id="hargaXEM7">7</td>
+          <td class="table-light" id="hargaXEM6">6</td>
+          <td class="table-light" id="hargaXEM5">5</td>
+          <td class="table-light" id="hargaXEM4">4</td>
+          <td class="table-light" id="hargaXEM3">3</td>
+          <td class="table-light" id="hargaXEM2">2</td>
+          <td class="table-light" id="hargaXEM1">1</td>
+          <td class="table-light" id="hargaXEM0">0</td>
+        </tr>
+        <tr>
+          <td id="persXEM9">9</td>
+          <td id="persXEM8">8</td>
+          <td id="persXEM7">7</td>
+          <td id="persXEM6">6</td>
+          <td id="persXEM5">5</td>
+          <td id="persXEM4">4</td>
+          <td id="persXEM3">3</td>
+          <td id="persXEM2">2</td>
+          <td id="persXEM1">1</td>
+          <td id="persXEM0">0</td>
+        </tr> -->
+
+        <tr>
+          <td rowspan="2" class="table-primary pt-5" id="XMR10">XMR</td>
+          <td class="table-primary" id="hargaXMR9">9</td>
+          <td class="table-primary" id="hargaXMR8">8</td>
+          <td class="table-primary" id="hargaXMR7">7</td>
+          <td class="table-primary" id="hargaXMR6">6</td>
+          <td class="table-primary" id="hargaXMR5">5</td>
+          <td class="table-primary" id="hargaXMR4">4</td>
+          <td class="table-primary" id="hargaXMR3">3</td>
+          <td class="table-primary" id="hargaXMR2">2</td>
+          <td class="table-primary" id="hargaXMR1">1</td>
+          <td class="table-primary" id="hargaXMR0">0</td>
+        </tr>
+        <tr>
+          <td id="persXMR9">9</td>
+          <td id="persXMR8">8</td>
+          <td id="persXMR7">7</td>
+          <td id="persXMR6">6</td>
+          <td id="persXMR5">5</td>
+          <td id="persXMR4">4</td>
+          <td id="persXMR3">3</td>
+          <td id="persXMR2">2</td>
+          <td id="persXMR1">1</td>
+          <td id="persXMR0">0</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2" class="table-light pt-5" id="XRP10">XRP</td>
+          <td class="table-light" id="hargaXRP9">9</td>
+          <td class="table-light" id="hargaXRP8">8</td>
+          <td class="table-light" id="hargaXRP7">7</td>
+          <td class="table-light" id="hargaXRP6">6</td>
+          <td class="table-light" id="hargaXRP5">5</td>
+          <td class="table-light" id="hargaXRP4">4</td>
+          <td class="table-light" id="hargaXRP3">3</td>
+          <td class="table-light" id="hargaXRP2">2</td>
+          <td class="table-light" id="hargaXRP1">1</td>
+          <td class="table-light" id="hargaXRP0">0</td>
+        </tr>
+        <tr>
+          <td id="persXRP9">9</td>
+          <td id="persXRP8">8</td>
+          <td id="persXRP7">7</td>
+          <td id="persXRP6">6</td>
+          <td id="persXRP5">5</td>
+          <td id="persXRP4">4</td>
+          <td id="persXRP3">3</td>
+          <td id="persXRP2">2</td>
+          <td id="persXRP1">1</td>
+          <td id="persXRP0">0</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="container mt-5 mb-5">
+      <label for="exampleFormControlInput1" class="form-label"
+        >Masukkan harga</label
+      >
+      <input
+        class="form-control form-control-lg mb-3"
+        type="text"
+        placeholder="Harga"
+        aria-label=".form-control-lg example"
+        id="harga"
+        style="width: 50%"
+      />
+      <button class="btn btn-primary" type="button" onclick="hitung()">
+        Cek Presentase
+      </button>
+      <div style="width: 50%">
+        <h3 class="alert alert-success mt-3" id="hp5">Harga naik 5%</h3>
+        <h3 class="alert alert-success mt-3" id="hp4">Harga naik 4%</h3>
+        <h3 class="alert alert-success mt-3" id="hp3">Harga naik 3%</h3>
+        <h3 class="alert alert-success mt-3" id="hp2">Harga naik 2%</h3>
+        <h3 class="alert alert-success mt-3" id="hp1">Harga naik 1%</h3>
+        <h3 class="alert alert-primary mt-3" id="hp0">Harga 0%</h3>
+        <h3 class="alert alert-danger mt-3" id="hp-1">Harga turun 1%</h3>
+        <h3 class="alert alert-danger mt-3" id="hp-2">Harga turun 2%</h3>
+        <h3 class="alert alert-danger mt-3" id="hp-3">Harga turun 3%</h3>
+        <h3 class="alert alert-danger mt-3" id="hp-4">Harga turun 4%</h3>
+        <h3 class="alert alert-danger mt-3" id="hp-5">Harga turun 5%</h3>
+      </div>
+    </div>
+
+    <audio id="audio1">
+      <source src="Assets/music/1.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="audio2">
+      <source src="Assets/music/2.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="audio3">
+      <source src="Assets/music/3.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <script src="Assets/js/moment.js"></script>
+    <script>
+      function hitung() {
+        let hargaInput = document.getElementById("harga").value;
+
+        for (i = 5; i >= -5; i--) {
+          let sLn = convertToRupiah(
+            ((i / 100) * hargaInput + Number(hargaInput)).toFixed(0)
+          );
+          document.getElementById(`hp${i}`).innerHTML = `${i}% ==> ${sLn}`;
+        }
+      }
+      setTimeout(loadData.bind(null, "BTC"), 1000);
+      setTimeout(loadData.bind(null, "AAVE"), 2000);
+      setTimeout(loadData.bind(null, "ADA"), 3000);
+      setTimeout(loadData.bind(null, "ATOM"), 4000);
+
+      setTimeout(loadData.bind(null, "BCH"), 5000);
+      setTimeout(loadData.bind(null, "BSV"), 6000);
+      setTimeout(loadData.bind(null, "DOT"), 7000);
+      setTimeout(loadData.bind(null, "EOS"), 8000);
+
+      setTimeout(loadData.bind(null, "ETH"), 9000);
+      setTimeout(loadData.bind(null, "LINK"), 10000);
+      setTimeout(loadData.bind(null, "LTC"), 11000);
+      // setTimeout(loadData.bind(null, "TRX"), 12000);
+
+      setTimeout(loadData.bind(null, "XLM"), 13000);
+      // setTimeout(loadData.bind(null, "XEM"), 14000);
+      setTimeout(loadData.bind(null, "XMR"), 15000);
+      setTimeout(loadData.bind(null, "XRP"), 16000);
+
+      setTimeout(function () {
+        setInterval(loadData.bind(null, "BTC"), 60000);
+      }, 1000);
+      setTimeout(function () {
+        setInterval(loadData.bind(null, "AAVE"), 60000);
+      }, 2000);
+      setTimeout(function () {
+        setInterval(loadData.bind(null, "ADA"), 60000);
+      }, 3000);
+      setTimeout(function () {
+        setInterval(loadData.bind(null, "ATOM"), 60000);
+      }, 4000);
+
+      setTimeout(function () {
+        setInterval(loadData.bind(null, "BCH"), 60000);
+      }, 5000);
+      setTimeout(function () {
+        setInterval(loadData.bind(null, "BSV"), 60000);
+      }, 6000);
+      setTimeout(function () {
+        setInterval(loadData.bind(null, "DOT"), 60000);
+      }, 7000);
+      setTimeout(function () {
+        setInterval(loadData.bind(null, "EOS"), 60000);
+      }, 8000);
+
+      setTimeout(function () {
+        setInterval(loadData.bind(null, "ETH"), 60000);
+      }, 9000);
+      setTimeout(function () {
+        setInterval(loadData.bind(null, "LINK"), 60000);
+      }, 10000);
+      setTimeout(function () {
+        setInterval(loadData.bind(null, "LTC"), 60000);
+      }, 11000);
+      // setTimeout(function () {
+      //   setInterval(loadData.bind(null, "TRX"), 60000);
+      // }, 12000);
+
+      setTimeout(function () {
+        setInterval(loadData.bind(null, "XLM"), 60000);
+      }, 13000);
+      // setTimeout(function () {
+      //   setInterval(loadData.bind(null, "XEM"), 60000);
+      // }, 14000);
+      setTimeout(function () {
+        setInterval(loadData.bind(null, "XMR"), 60000);
+      }, 15000);
+      setTimeout(function () {
+        setInterval(loadData.bind(null, "XRP"), 60000);
+      }, 16000);
+
+      function convertToRupiah(angka) {
+        let rupiah = "";
+        let angkarev = angka.toString().split("").reverse().join("");
+        for (let i = 0; i < angkarev.length; i++)
+          if (i % 3 == 0) rupiah += angkarev.substr(i, 3) + ".";
+        return rupiah
+          .split("", rupiah.length - 1)
+          .reverse()
+          .join("");
+      }
+
+      //+++++++++++++++++++++++++++++++++ Load Data Coin ++++++++++++++++++++++++++++++//
+      function loadData(x) {
+        let timem = moment().format("LTS");
+        let nama = `${x}\n${timem}`;
+        console.log(nama);
+        document.getElementById(`${x}10`).innerHTML = nama;
+        let to = Number(String(Date.now()).substring(0, 10));
+        let from = to - 13500;
+        let xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            let r = JSON.parse(this.responseText);
+            console.log(r);
+            //++++++++++++++++++++++++++++++Audio+++++++++++++++++++++++++++//
+            let sL = (((r.c[9] - r.o[9]) / r.o[9]) * 100).toFixed(2);
+            let lagu1 = document.getElementById("audio1");
+            let lagu2 = document.getElementById("audio2");
+            let lagu3 = document.getElementById("audio3");
+            if (sL < -3) {
+              lagu3.play();
+            } else if (sL < -2) {
+              lagu2.play();
+            } else if (sL < -1.5) {
+              lagu1.play();
+            }
+
+            for (i = 9; i >= 0; i--) {
+              let time = new Date(r.t[i] * 1000);
+              let hours = String(time.getHours());
+              let minutes = String(time.getMinutes());
+              let selisih = (((r.c[i] - r.o[i]) / r.o[i]) * 100).toFixed(2);
+              let warna = "table-primary";
+              if (selisih < -3) {
+                warna = "table-danger";
+              } else if (selisih < -2) {
+                warna = "table-secondary";
+              } else if (selisih < -1) {
+                warna = "table-warning";
+              } else if (selisih < 0) {
+                warna = "table-info";
+              } else if (selisih == 0) {
+                warna = "table-dark";
+              } else {
+                warna = "table-success";
+              }
+
+              document.getElementById(
+                `h${i}`
+              ).innerHTML = `${hours}.${minutes}`;
+              document.getElementById(
+                `harga${x}${i}`
+              ).innerHTML = convertToRupiah(r.c[i]);
+              document.getElementById(`pers${x}${i}`).innerHTML = selisih;
+              document.getElementById(`pers${x}${i}`).className = warna;
+            }
+          }
+        };
+        xhttp.open(
+          "GET",
+          `https://indodax.com/tradingview/history?symbol=${x}IDR&resolution=15&from=${from}&to=${to}`,
+          true
+        );
+        xhttp.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded"
+        );
+        xhttp.send();
+      }
+    </script>
+  </body>
+</html>
