@@ -753,7 +753,7 @@
 
       function convertToRupiah(angka) {
         let rupiah = "";
-        let angkarev = angka.toString().split("").reverse().join("");
+        let angkarev = String(angka).split("").reverse().join("");
         for (let i = 0; i < angkarev.length; i++)
           if (i % 3 == 0) rupiah += angkarev.substr(i, 3) + ".";
         return rupiah
@@ -800,7 +800,9 @@
               let minutes = String(time.getMinutes());
               let selisih = (((r.c[i] - r.o[i]) / r.o[i]) * 100).toFixed(2);
               let warna = "table-primary";
-              if (selisih < -3) {
+              if (selisih < -5) {
+                warna = "table-dark";
+              } else if (selisih < -3) {
                 warna = "table-danger";
               } else if (selisih < -2) {
                 warna = "table-secondary";
@@ -809,7 +811,7 @@
               } else if (selisih < 0) {
                 warna = "table-info";
               } else if (selisih == 0) {
-                warna = "table-dark";
+                warna = "table-light";
               } else {
                 warna = "table-success";
               }
