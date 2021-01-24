@@ -14,6 +14,23 @@
   </head>
 
   <body>
+    <div class="container mt-5">
+      <select
+        class="form-select mb-3"
+        aria-label="Default select example"
+        id="pilihanDurasi"
+        style="width: 13%"
+      >
+        <option value="0">5 Menit</option>
+        <option value="1" selected>15 Menit</option>
+        <option value="2">1 Jam</option>
+        <option value="3">4 Jam</option>
+        <option value="4">1 Hari</option>
+      </select>
+      <button type="button" class="btn btn-primary btn-lg" onclick="durasi()">
+        Ganti Durasi
+      </button>
+    </div>
     <div class="mt-5">
       <table
         class="table table-bordered border-primary"
@@ -669,6 +686,8 @@
 
     <script src="Assets/js/moment.js"></script>
     <script>
+      durasi();
+
       function hitung() {
         let hargaInput = document.getElementById("harga").value;
 
@@ -679,77 +698,102 @@
           document.getElementById(`hp${i}`).innerHTML = `${i}% ==> ${sLn}`;
         }
       }
-      setTimeout(loadData.bind(null, "BTC"), 1000);
-      setTimeout(loadData.bind(null, "AAVE"), 2000);
-      setTimeout(loadData.bind(null, "ADA"), 3000);
-      setTimeout(loadData.bind(null, "ATOM"), 4000);
 
-      setTimeout(loadData.bind(null, "BCH"), 5000);
-      setTimeout(loadData.bind(null, "BSV"), 6000);
-      setTimeout(loadData.bind(null, "DOT"), 7000);
-      setTimeout(loadData.bind(null, "EOS"), 8000);
+      function durasi() {
+        let f = 15;
+        var g = document.getElementById("pilihanDurasi").options.selectedIndex;
+        if (g === 0) {
+          f = 5;
+          h = 4500;
+        } else if (g === 2) {
+          f = 60;
+          h = 54000;
+        } else if (g === 3) {
+          f = 240;
+          h = 216000;
+        } else if (g === 4) {
+          f = "D";
+          h = 1296000;
+        } else {
+          f = 15;
+          h = 13500;
+        }
+        console.log(f);
+        console.log(h);
 
-      setTimeout(loadData.bind(null, "ETH"), 9000);
-      setTimeout(loadData.bind(null, "LINK"), 10000);
-      setTimeout(loadData.bind(null, "LTC"), 11000);
-      // setTimeout(loadData.bind(null, "TRX"), 12000);
+        setTimeout(loadData.bind(null, "BTC", f, h), 1000);
+        setTimeout(loadData.bind(null, "AAVE", f, h), 3000);
+        setTimeout(loadData.bind(null, "ADA", f, h), 5000);
+        setTimeout(loadData.bind(null, "ATOM", f, h), 7000);
 
-      setTimeout(loadData.bind(null, "XLM"), 12000);
-      // setTimeout(loadData.bind(null, "XEM"), 14000);
-      setTimeout(loadData.bind(null, "XMR"), 13000);
-      setTimeout(loadData.bind(null, "XRP"), 14000);
+        setTimeout(loadData.bind(null, "BCH", f, h), 9000);
+        setTimeout(loadData.bind(null, "BSV", f, h), 11000);
+        setTimeout(loadData.bind(null, "DOT", f, h), 13000);
+        setTimeout(loadData.bind(null, "EOS", f, h), 15000);
 
-      setTimeout(function () {
-        setInterval(loadData.bind(null, "BTC"), 60000);
-      }, 1000);
-      setTimeout(function () {
-        setInterval(loadData.bind(null, "AAVE"), 60000);
-      }, 2000);
-      setTimeout(function () {
-        setInterval(loadData.bind(null, "ADA"), 60000);
-      }, 3000);
-      setTimeout(function () {
-        setInterval(loadData.bind(null, "ATOM"), 60000);
-      }, 4000);
+        setTimeout(loadData.bind(null, "ETH", f, h), 17000);
+        setTimeout(loadData.bind(null, "LINK", f, h), 190000);
+        setTimeout(loadData.bind(null, "LTC", f, h), 21000);
+        // setTimeout(loadData.bind(null, "TRX", f, h), 12000);
 
-      setTimeout(function () {
-        setInterval(loadData.bind(null, "BCH"), 60000);
-      }, 5000);
-      setTimeout(function () {
-        setInterval(loadData.bind(null, "BSV"), 60000);
-      }, 6000);
-      setTimeout(function () {
-        setInterval(loadData.bind(null, "DOT"), 60000);
-      }, 7000);
-      setTimeout(function () {
-        setInterval(loadData.bind(null, "EOS"), 60000);
-      }, 8000);
+        setTimeout(loadData.bind(null, "XLM", f, h), 23000);
+        // setTimeout(loadData.bind(null, "XEM", f, h), 14000);
+        setTimeout(loadData.bind(null, "XMR", f, h), 25000);
+        setTimeout(loadData.bind(null, "XRP", f, h), 27000);
 
-      setTimeout(function () {
-        setInterval(loadData.bind(null, "ETH"), 60000);
-      }, 9000);
-      setTimeout(function () {
-        setInterval(loadData.bind(null, "LINK"), 60000);
-      }, 10000);
-      setTimeout(function () {
-        setInterval(loadData.bind(null, "LTC"), 60000);
-      }, 11000);
-      // setTimeout(function () {
-      //   setInterval(loadData.bind(null, "TRX"), 60000);
-      // }, 12000);
+        // //++++++++++++++++++++++Interval+++++++++++++++++++++++++++++//
+        setTimeout(function () {
+          setInterval(loadData.bind(null, "BTC", f, h), 120000);
+        }, 1000);
+        setTimeout(function () {
+          setInterval(loadData.bind(null, "AAVE", f, h), 120000);
+        }, 3000);
+        setTimeout(function () {
+          setInterval(loadData.bind(null, "ADA", f, h), 120000);
+        }, 5000);
+        setTimeout(function () {
+          setInterval(loadData.bind(null, "ATOM", f, h), 120000);
+        }, 7000);
 
-      setTimeout(function () {
-        setInterval(loadData.bind(null, "XLM"), 60000);
-      }, 12000);
-      // setTimeout(function () {
-      //   setInterval(loadData.bind(null, "XEM"), 60000);
-      // }, 14000);
-      setTimeout(function () {
-        setInterval(loadData.bind(null, "XMR"), 60000);
-      }, 13000);
-      setTimeout(function () {
-        setInterval(loadData.bind(null, "XRP"), 60000);
-      }, 14000);
+        setTimeout(function () {
+          setInterval(loadData.bind(null, "BCH", f, h), 120000);
+        }, 9000);
+        setTimeout(function () {
+          setInterval(loadData.bind(null, "BSV", f, h), 120000);
+        }, 11000);
+        setTimeout(function () {
+          setInterval(loadData.bind(null, "DOT", f, h), 120000);
+        }, 13000);
+        setTimeout(function () {
+          setInterval(loadData.bind(null, "EOS", f, h), 120000);
+        }, 15000);
+
+        setTimeout(function () {
+          setInterval(loadData.bind(null, "ETH", f, h), 120000);
+        }, 17000);
+        setTimeout(function () {
+          setInterval(loadData.bind(null, "LINK", f, h), 120000);
+        }, 190000);
+        setTimeout(function () {
+          setInterval(loadData.bind(null, "LTC", f, h), 120000);
+        }, 21000);
+        // setTimeout(function () {
+        //   setInterval(loadData.bind(null, "TRX", f, h), 120000);
+        // }, 12000);
+
+        setTimeout(function () {
+          setInterval(loadData.bind(null, "XLM", f, h), 120000);
+        }, 23000);
+        // setTimeout(function () {
+        //   setInterval(loadData.bind(null, "XEM", f, h), 120000);
+        // }, 14000);
+        setTimeout(function () {
+          setInterval(loadData.bind(null, "XMR", f, h), 120000);
+        }, 25000);
+        setTimeout(function () {
+          setInterval(loadData.bind(null, "XRP", f, h), 120000);
+        }, 27000);
+      }
 
       function convertToRupiah(angka) {
         let rupiah = "";
@@ -763,13 +807,13 @@
       }
 
       //+++++++++++++++++++++++++++++++++ Load Data Coin ++++++++++++++++++++++++++++++//
-      function loadData(x) {
+      function loadData(x, y, z) {
         let timem = moment().format("LTS");
         let nama = `${x}\n${timem}`;
         console.log(nama);
         document.getElementById(`${x}10`).innerHTML = nama;
         let to = Number(String(Date.now()).substring(0, 10));
-        let from = to - 13500;
+        let from = to - z;
         let xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
           if (this.readyState == 4 && this.status == 200) {
@@ -796,6 +840,7 @@
 
             for (i = 14; i >= 0; i--) {
               let time = new Date(r.t[i] * 1000);
+              let dates = String(time.getDate());
               let hours = String(time.getHours());
               let minutes = String(time.getMinutes());
               let selisih = (((r.c[i] - r.o[i]) / r.o[i]) * 100).toFixed(2);
@@ -818,7 +863,7 @@
 
               document.getElementById(
                 `h${i}`
-              ).innerHTML = `${hours}.${minutes}`;
+              ).innerHTML = `${dates} - ${hours}.${minutes}`;
               document.getElementById(
                 `harga${x}${i}`
               ).innerHTML = convertToRupiah(r.c[i]);
@@ -829,7 +874,7 @@
         };
         xhttp.open(
           "GET",
-          `https://indodax.com/tradingview/history?symbol=${x}IDR&resolution=15&from=${from}&to=${to}`,
+          `https://indodax.com/tradingview/history?symbol=${x}IDR&resolution=${y}&from=${from}&to=${to}`,
           true
         );
         xhttp.setRequestHeader(
